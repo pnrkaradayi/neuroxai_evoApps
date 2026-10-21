@@ -1,0 +1,38 @@
+{
+  "veri_kok": "C:/NeuroXAI_data",
+  "islenmis_kok": "C:/NeuroXAI_data/islenmis",
+  "sonuc_kok": "C:/NeuroXAI_data/sonuclar",
+
+  "_kohort_not": "Bildiri: ilk aşama (v1) seçimleri. SCI için v2 dosyalarına geçilecek.",
+  "adni_vizitler": "C:/NeuroXAI_data/metadata/adni/secim/v1_861hasta/adni_kohort_vizitler.csv",
+  "oasis_vizitler": "C:/NeuroXAI_data/metadata/oasis3/secim/v1_200hasta/oasis3_kohort_vizitler.csv",
+  "oasis_indirme_listesi": "C:/NeuroXAI_data/metadata/oasis3/secim/v1_200hasta/oasis3_indirme_listesi.csv",
+
+  "onisleme": {
+    "paralel_is": 6,
+    "is_basina_thread": 2,
+    "n4_kucultme": 4,
+    "kayit": "afin",
+    "afin_kucultme": [4, 2],
+    "pet_kucultme": [4, 2],
+    "_kucultme_not": "Kayıt 2 mm seviyesinde durur: tek vizitte 215 sn -> 70 sn, T1 NCC 0.503 -> 0.495 (14.10.2026 testi).",
+    "_kayit_not": "afin: CPU'da hızlı (görüntü başına ~1 dk). SyN proje sunucusunda SCI aşamasında.",
+    "pet_gec_cerceve_dk": {"PIB": [30, 60], "AV45": [50, 70], "FDG": [30, 60]},
+    "pet_yumusatma_fwhm_mm": 6,
+    "_pet_yumusatma_not": "Yalnız ADNI dışı (OASIS) PET'lere; ADNI PET'leri zaten 'Uniform 6mm Res'.",
+    "suvr_referans": "serebellum"
+  },
+
+  "qc": {
+    "t1_ncc_min": 0.10,
+    "_not": "T1-MNI NCC < 0.10: kayıt başarısız (ADNI v1'de 3 vizit, ör. 130_S_2373 NCC -0.06); yamalara ve Δ'ya alınmaz."
+  },
+
+  "yama": {
+    "boyut": 128,
+    "duzlem": "koronal",
+    "komsu_dilim_mm": 2,
+    "delta_kirpma_sigma": 3,
+    "kenar_agirlik": {"sobel": 0.5, "laplacian": 0.5}
+  }
+}

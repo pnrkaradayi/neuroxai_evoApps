@@ -1,0 +1,42 @@
+{
+  "veri_kok": "C:/NeuroXAI_data",
+  "butce_gb": {
+    "oasis3": 150,
+    "adni": 350
+  },
+  "adni": {
+    "mr_pet_max_gun": 180,
+    "min_vizit": 1,
+    "ara_mr_vizitleri": true,
+    "tau_pet": true,
+    "ida_parca_boyutu": 500,
+    "paralel_indirme": 1,
+    "_ag_arayuzu_not": "Boş: Windows seçer. Ethernet+Wi-Fi birlikte açıksa Ethernet IP'si yazılabilir (ipconfig).",
+    "ag_arayuzu": "",
+    "tahmini_mb": {"T1w": 31.4, "PET": 5.1}
+  },
+  "oasis3": {
+    "kullanici": "pinaratas",
+    "_not": "OASIS-3'te FDG yalnızca 97 hastada var; dış doğrulama amiloid PET (AV45, yoksa PIB) ile yapılır.",
+    "pet_izleyiciler": ["AV45", "PIB"],
+    "kohort_kotasi": {"AD": 162, "MCI": 70, "CN": 200},
+    "rastgele_tohum": 2026,
+    "mr_pet_max_gun": 365,
+    "klinik_max_gun": 365,
+    "onceki_mr_min_gun": 180,
+    "meta_dosyalar": [
+      "OASIS3_demographics.csv",
+      "OASIS3_UDSb4_cdr.csv",
+      "OASIS3_UDSd1_diagnoses.csv",
+      "OASIS3_UDSc1_cognitive_assessments.csv",
+      "OASIS3_MR_json.csv",
+      "OASIS3_PET_json.csv",
+      "OASIS3_PET_datasetdescription.csv",
+      "OASIS3_amyloid_centiloid.csv",
+      "OASIS3_Freesurfer_output.csv",
+      "OASIS-3_Imaging_Data_Dictionary_v2.0.pdf",
+      "OASIS3_Clinical and Psychometrics_dictionary.xlsx",
+      "DataUseAgreement_July2022.pdf"
+    ]
+  }
+}
